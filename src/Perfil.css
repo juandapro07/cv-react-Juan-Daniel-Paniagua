@@ -1,0 +1,66 @@
+.perfil {
+  background: #ffffff;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.perfil:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.perfil h2 {
+  text-align: center;
+  color: #0077b6;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.perfil p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 1rem;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+/* ===== Habilidades ===== */
+.perfil h3 {
+  color: #023e8a;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skills span {
+  background-color: #e0f2fe;
+  color: #0077b6;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.skills span:hover {
+  background-color: #0077b6;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .perfil {
+    padding: 25px;
+  }
+}
