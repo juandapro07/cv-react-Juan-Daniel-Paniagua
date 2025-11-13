@@ -1,37 +1,45 @@
-.Experiencia {
-  background: #ffffff;
-  max-width: 600px;
+.experiencia {
+  background: #1a1a1d;
+  max-width: 700px;
   margin: 40px auto;
-  padding: 25px 35px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 180, 216, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.Experiencia h2 {
+.experiencia:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(0, 180, 216, 0.25);
+}
+
+.experiencia h2 {
   text-align: center;
-  color: #0077b6;
-  margin-bottom: 20px;
+  color: #00b4d8;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
 }
 
-.Experiencia ul {
-  list-style: none;
-  padding: 0;
-}
-
-.Experiencia li {
-  background: #f1f5f9;
-  margin-bottom: 10px;
-  padding: 10px 15px;
-  border-radius: 8px;
-  line-height: 1.5;
+.exp-item {
+  background: #242428;
+  border-left: 4px solid #00b4d8;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
   transition: all 0.2s ease;
 }
 
-.Experiencia li:hover {
-  background: #e0f2fe;
-  transform: translateX(5px);
+.exp-item:hover {
+  background: #2c2c32;
+  transform: translateX(6px);
+  box-shadow: 0 0 10px rgba(0, 180, 216, 0.2);
 }
 
-.Experiencia strong {
-  color: #023e8a;
+.exp-item h3 {
+  color: #48cae4;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
 }
+  
