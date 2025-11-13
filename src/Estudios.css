@@ -1,0 +1,70 @@
+.estudios {
+  background: #ffffff;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.estudios:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Título ===== */
+.estudios h2 {
+  text-align: center;
+  color: #0077b6;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.estudios h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0077b6;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ===== Cada estudio ===== */
+.est-item {
+  background: #f1f5f9;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #0077b6;
+  transition: all 0.3s ease;
+}
+
+.est-item:hover {
+  background: #e0f2fe;
+  transform: translateY(-3px);
+}
+
+.est-item h3 {
+  color: #023e8a;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.est-item p {
+  color: #333;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.est-item strong {
+  color: #0077b6;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .estudios {
+    padding: 25px;
+  }
+}
