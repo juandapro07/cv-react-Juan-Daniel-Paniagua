@@ -1,33 +1,28 @@
 import './Estudios.css'
+import { EstudiosData } from './data'
 
 function Estudios() {
-  const estudios = [
-    {
-      titulo: 'Bachillerato Académico',
-      institucion: 'Institución Educativa Ana Maria Janer',
-      año: '2024',
-    },
-    {
-      titulo: 'Técnologo en Programación de Software',
-      institucion: 'SENA',
-      año: '2025-actualidad',
-    },
-  ]
+const { estudio1, estudio2 } = EstudiosData
 
-  return (
-    <section className="estudios">
-      <h2>Estudios</h2>
+return ( <section className="estudios"> <h2>Estudios</h2>
 
-      {estudios.map((estudio, index) => (
-        <article key={index} className="est-item">
-          <h3>{estudio.titulo}</h3>
-          <p>
-            <strong>{estudio.institucion}</strong> — <span>{estudio.año}</span>
-          </p>
-        </article>
-      ))}
-    </section>
-  )
+  <article className="est-item">
+    <h3>{estudio1.titulo}</h3>
+    <p>
+      <strong>{estudio1.institucion}</strong> — {estudio1.año}
+    </p>
+  </article>
+
+  <article className="est-item">
+    <h3>{estudio2.titulo}</h3>
+    <p>
+      <strong>{estudio2.institucion}</strong> — {estudio2.año}
+    </p>
+  </article>
+</section>
+
+)
 }
 
 export default Estudios
+

@@ -1,31 +1,24 @@
 import './Experiencia.css'
-import React from 'react'
+import { ExperienciaData } from './data'
 
-type ExperienciaItem = {
-  titulo: string
-  descripcion: string
-}
+function Experiencia() {
+const { experiencia1, experiencia2 } = ExperienciaData
 
-type Props = {
-  experiencias?: ExperienciaItem[]
-}
+return ( <section className="experiencia"> <h2>Experiencia</h2>
 
-function Experiencia({ experiencias = [] }: Props) {
-  return (
-    <section className="Experiencia">
-      <h2>Experiencia</h2>
-      {experiencias.length === 0 ? (
-        <p>No hay experiencias para mostrar.</p>
-      ) : (
-        experiencias.map((exp, idx) => (
-          <article key={idx} className="exp-item">
-            <h3>{exp.titulo}</h3>
-            <p>{exp.descripcion}</p>
-          </article>
-        ))
-      )}
-    </section>
-  )
+  <article className="exp-item">
+    <h3>{experiencia1.titulo}</h3>
+    <p>{experiencia1.descripcion}</p>
+  </article>
+
+  <article className="exp-item">
+    <h3>{experiencia2.titulo}</h3>
+    <p>{experiencia2.descripcion}</p>
+  </article>
+</section>
+
+
+)
 }
 
 export default Experiencia
