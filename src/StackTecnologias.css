@@ -1,0 +1,80 @@
+
+        body {
+            background: #0d0d0f;
+            font-family: Arial, sans-serif;
+        }
+
+        .perfil {
+            background: #1a1a1d;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 30px 40px;
+            border-radius: 16px;
+            box-shadow: 0 0 15px rgba(0, 180, 216, 0.15);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .perfil:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 25px rgba(0, 180, 216, 0.25);
+        }
+
+        .perfil h2 {
+            text-align: center;
+            color: #00b4d8;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* ===== Títulos de secciones ===== */
+        .perfil h3 {
+            color: #48cae4;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        /* ===== Listas estilo burbuja ===== */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            background-color: #242428;
+            color: #00b4d8;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(0, 180, 216, 0.3);
+        }
+
+        .skills li:hover {
+            background-color: #00b4d8;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .notecnologias {
+            color: #d0d0d0;
+            font-size: 1rem;
+            line-height: 1.6;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 600px) {
+            .perfil {
+                padding: 25px;
+            }
+        }
+    
