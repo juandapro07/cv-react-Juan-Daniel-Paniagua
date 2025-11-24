@@ -1,16 +1,43 @@
-# React + Vite
+# Mi React Vite Juan Daniel Paniagua en React
+# CV Juan Daniel Paniagua
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![alt text](image.png)
 
-Currently, two official plugins are available:
+Este es mi portafolio personal creado con React, donde muestro mi hoja de vida, mis proyectos, y mi stack de tecnologías. Fue desarrollado con un enfoque moderno, visual y responsivo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# instrucciones para ejecutarlo
 
-## React Compiler
+1. clonar este repositorio:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+en tu terminal escribe:
+"git clone (https://github.com/juandapro07/cv-react-Juan-Daniel-Paniagua.git)"
 
-## Expanding the ESLint configuration
+2. Configurar espacio para tu proyecto 
+Entra a la carpeta he instala las dependencias con "cd nombre-proyecto". Luego instala las dependencias con "npm install", si trabajas con React.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Ejecuta tu proyecto
+Usa "npm run dev" y ejecuta tu proyecto en el local host
+
+
+## 🗂 Historial de cambios
+
+### 📅 24 Nov 2025
+
+* Creación de componente dinámico con renderización de listas y condicionales.
+
+### 📅 20 Nov 2025
+
+* Corrección y creación adecuada de props en los componentes **Estudios** y **Experiencia**.
+
+### 📅 13 Nov 2025
+
+* Implementación de importación, exportación y destructuración de props.
+* Actualización de archivos modificados.
+* Creación del componente **Estudios** con su respectivo CSS.
+* Creación del componente **Experiencias** con su CSS.
+
+### 📅 10 Nov 2025
+
+* Creación del componente **Perfil** con sus estilos CSS.
+* Creación de la cabecera (Header) e importación en `App`.
+* Commit inicial del proyecto con **React y Vite**.
