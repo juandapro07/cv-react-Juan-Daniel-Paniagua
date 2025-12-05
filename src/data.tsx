@@ -2,7 +2,7 @@ export const CabeceraData = {
 nombre: 'Juan Daniel Paniagua Tapias',
 edad: '18 años',
 ubicacion: 'Medellín, Colombia',
-correo: '[juandanielpt07@gmail.com](mailto:juandanielpt07@gmail.com)',
+correo: ' juandanielpt07@gmail.com ',
 telefono: '+57 300 238 1414',
 foto: '/img/juan.jpg',
 }
@@ -43,3 +43,19 @@ titulo: 'Servicio social',
 descripcion: 'Apoyo en mantenimiento de equipos y redes escolares.',
 },
 }
+
+
+
+
+export const habilidadesData = [
+  "Resolución de problemas",
+  "Pensamiento lógico",
+  "Trabajo colaborativo",
+  "Comunicación asertiva",
+  "Aprendizaje autónomo",
+  "Adaptabilidad a nuevos entornos",
+  "Uso práctico de Git y GitHub",
+  "Gestión básica de proyectos",
+  "Organización y planificación",
+  "Proactividad y disposición para aprender"
+];

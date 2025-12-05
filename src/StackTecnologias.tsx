@@ -1,53 +1,40 @@
-import './StackTecnologias.css';
+import { useState } from "react";
+import FormularioTecnologia from "./FormularioTecnologia";
+import  "./stacktecnologias.css"
 
 export default function StackTecnologias() {
-    const tecnologias = {
-        lenguajes: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Python'],
-        frameworks: ['React', 'Next.js', 'Vue.js'],
-        herramientas: ['Git', 'GitHub', 'VSCode', 'Figma'],
-    };
+  const [tecnologias, setTecnologias] = useState<string[]>([]);
+  const [mostrarFormulario, setMostrarFormulario] = useState<boolean>(false);
 
-    const noTieneTecnologias =
-        tecnologias.lenguajes.length === 0 &&
-        tecnologias.frameworks.length === 0 &&
-        tecnologias.herramientas.length === 0;
+  const agregarTecnologia = (nuevaTec: string) => {
+    setTecnologias([...tecnologias, nuevaTec]);
+    setMostrarFormulario(false);
+  };
 
-    if (noTieneTecnologias) {
-        return (
-            <div className="perfil">
-                <h2>Stack de Tecnologías</h2>
-                <p className="notecnologias">El usuario no tiene tecnologías</p>
-            </div>
-        );
-    }
+  return (
+    <div className="stack-container">
+      <h1 className="stack-title">TECNOLOGÍAS</h1>
 
-    return (
-        <div className="perfil">
-            <h2>Stack de Tecnologías</h2>
+      <button
+        onClick={() => setMostrarFormulario(!mostrarFormulario)}
+        className="stack-btn"
+      >
+        {mostrarFormulario ? "Cerrar Formulario" : "Agregar Tecnología"}
+      </button>
 
-            {/* Lenguajes */}
-            <h3>Lenguajes</h3>
-            <ul className="skills">
-                {tecnologias.lenguajes.map((tec, index) => (
-                    <li key={index}>{tec}</li>
-                ))}
-            </ul>
+      {mostrarFormulario && (
+        <FormularioTecnologia onAgregar={agregarTecnologia} />
+      )}
 
-            {/* Frameworks */}
-            <h3>Frameworks</h3>
-            <ul className="skills">
-                {tecnologias.frameworks.map((tec, index) => (
-                    <li key={index}>{tec}</li>
-                ))}
-            </ul>
-
-            {/* Herramientas */}
-            <h3>Herramientas</h3>
-            <ul className="skills">
-                {tecnologias.herramientas.map((tec, index) => (
-                    <li key={index}>{tec}</li>
-                ))}
-            </ul>
-        </div>
-    );
+      {tecnologias.length > 0 ? (
+        <ul className="stack-list">
+          {tecnologias.map((tec, index) => (
+            <li key={index}>{tec}</li>
+          ))}
+        </ul>
+      ) : (
+        <p className="stack-empty">Aún no agregas tecnologías.</p>
+      )}
+    </div>
+  );
 }
